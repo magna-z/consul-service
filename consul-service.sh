@@ -4,8 +4,8 @@ set -e
 
 function usage {
     echo "USAGE: $0"
-    echo "  Register service: CONSUL_URL=<consul-url> $0 register -e <environment> -n <name> -p <port> -t <tags>"
-    echo "  Deregister service: CONSUL_URL=<consul-url> $0 deregister -e <environment> -n <name>"
+    echo "  Register service: CONSUL_URL=<consul-url> [CONSUL_TOKEN=<consul-token>] [CURL_MAX_TIME=5] $0 register -e <environment> -n <name> -p <port> -t <tags>"
+    echo "  Deregister service: CONSUL_URL=<consul-url> [CONSUL_TOKEN=<consul-token>] [CURL_MAX_TIME=5] $0 deregister -e <environment> -n <name>"
     exit $1
 }
 
